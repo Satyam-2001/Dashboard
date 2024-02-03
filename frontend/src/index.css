@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+html,
+body,
+#root,
+.app,
+.content {
+  overflow-y: auto;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.button-type-fullscreen {
+  display: none !important
+}
+
+a {
+  font-family: Poppins, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.react-reveal, .css-1arvn2p-MuiStack-root {
+  margin: 0;
+}
+
+/* 
+html, body,
+#root,
+.app,
+.content, div {
+  font-size: inherit;
+} */
+
+.cards-container {
+  width: 80vw;
+  display: flex;
+  border-radius: 6px;
+  color: #333;
+  background: transparent;
+  overflow-x: auto;
+  padding: 0.8rem;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  box-shadow: 0 1px 1rem -4px #000;
+  margin: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+
+}
+
+.card:hover {
+  box-shadow: 0 4px 1rem -4px #000;
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10px;
+  }
+}
